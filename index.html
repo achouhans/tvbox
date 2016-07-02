@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+    <head>
+            <title>iDiot Box</title>
+            <link rel='shortcut icon' href='images/favicon/favicon.ico'>
+            <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+                <link rel="stylesheet" href="css/style.css">
+                 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                 <style type="text/css">
+
+                    .well-menu {
+                        min-height: 20px;
+                        padding: 51px;
+					}
+
+                 </style>
+                </head>
+                <body>
+                    <div id="page" class="page" >
+                        <section id="main">
+                            <div id="bg-dark"></div>
+                            <div id="bg-cream"></div>
+                            <div id="bg-green"></div>
+                            <div id="bg-red"></div>
+                            <div id="bg-blue"></div>
+                        </section>
+                        <div class="navbar navbar-inverse navbar-fixed-top">
+                             <div class="navbar-header pull-right">
+                               <a class="navbar-brand" href="#">Chouhan's TV</a>
+                            </div>
+                             <ul class="nav navbar-nav pull-right">
+                            <li>
+                                <p class="navbar-btn" id="menu-toggle">
+                                    <a href="#" class="btn-custom btn-default">
+                                        <span class="glyphicon-custom glyphicon-play-circle"></span>
+                                    </a>
+                                </p>
+                             </li>
+                           </ul>
+                        </div>
+                    <!--/.navbar -->
+                    <div id="wrapper" class="toggled">
+                        <!-- Sidebar -->
+                        <div id="sidebar-wrapper">
+                        <!-- Sidebar Menu Code -->
+                        <div class="well-menu" style="">
+                            <div class="sidebar-nav" style="overflow-y: scroll; overflow-x: hidden;">
+                                <ul class="nav nav-list">
+                               <li> <label class="tree-toggler sidebar-brand">Channels</label></li>
+                                    <li><label class="tree-toggler nav-header">Science & Technology</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#" id="nasaTV">NASA</a></li>
+                                            <li><a href="#" id="lifeHacker">Life Hacker</a></li>
+                                            <li><label class="tree-toggler nav-header">Header 1.1</label>
+                                                <ul class="nav nav-list tree">
+                                                    <li><a href="#">Link</a></li>
+                                                    <li><a href="#">Link</a></li>
+                                                    <li><label class="tree-toggler nav-header">Header 1.1.1</label>
+                                                        <ul class="nav nav-list tree">
+                                                            <li><a href="#">Link</a></li>
+                                                            <li><a href="#">Link</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- /#sidebar-wrapper -->
+                </div>
+
+
+                    <!-- Page Content -->
+                        <div id="page-content-wrapper">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-6 col-md-offset-3" style="z-index: 1;">
+                                    <div class="h_iframe" id="tvFrame" style="z-index: 1;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /#page-content-wrapper -->
+                    </div>
+                   
+                    <script src="js/index.js"></script>
+                </body>
+            </html>
